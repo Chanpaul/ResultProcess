@@ -29,7 +29,7 @@ object resultProcess {
   
   def getOutlier(srcDir:String,outPut:String,filePattern:String,metricPattern:String){
     val writer = new PrintWriter(new File(outPut));
-    writer.write("year month date hour status nn radius \n");
+    writer.write("year month day hour status nn radius \n");
 	  val srcDirFile=new File(srcDir);
 	  if (srcDirFile.exists && srcDirFile.isDirectory) {
 			val tempFiles=srcDirFile.listFiles.toList;			
